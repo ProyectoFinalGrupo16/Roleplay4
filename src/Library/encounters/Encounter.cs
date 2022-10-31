@@ -10,8 +10,8 @@ namespace RoleplayGame.Encounters
     public abstract class Encounter
     {
         public IReporter Reporter { get; set; }
-        public Character Character1 { get; }
-        public Character Character2 { get; }
+        public Character Character1 { get;set;}
+        public Character Character2 { get; set;}
 
         public Encounter(Character one, Character two)
         {

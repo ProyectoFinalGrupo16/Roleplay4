@@ -28,6 +28,8 @@ public class ScenarioA : IScenario
         personajes.Add(p2);
         personajes.Add(p3);
         personajes.Add(p4);
+
+        Console.WriteLine ($"el personaje {p1.Name}");
     }
 
     public void Run()

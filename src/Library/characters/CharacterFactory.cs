@@ -6,7 +6,10 @@ namespace RoleplayGame.Characters
     public enum CharacterType
     {
         Elf = 1,
-        Wizard = 2
+        Wizard = 2,
+
+        Trolls = 3,
+
     }
 
     /// <summary>
@@ -23,6 +26,7 @@ namespace RoleplayGame.Characters
             {
                 case CharacterType.Elf: return new Elf(name);
                 case CharacterType.Wizard: return new Wizard(name);
+                case CharacterType.Trolls: return new Trolls (name);
 
                 default: throw new System.Exception($"Invalid character {type}");
             }
