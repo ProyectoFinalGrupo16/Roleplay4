@@ -5,9 +5,9 @@ namespace RoleplayGame.Items
     public class EscudoMagico : IDefenseItem
     {
         private EscudoMedieval EscudoMedieval {get; set;}
-        private GemaMagicaDefensa GemaMagicaDefensa {get; set;}
+        private IGem GemaMagicaDefensa {get; set;}
 
-        public EscudoMagico(EscudoMedieval escudoMedieval, GemaMagicaDefensa gemaMagicaDefensa)
+        public EscudoMagico(EscudoMedieval escudoMedieval, IGem gemaMagicaDefensa)
         {
             this.GemaMagicaDefensa = gemaMagicaDefensa;
             this.EscudoMedieval = escudoMedieval;
