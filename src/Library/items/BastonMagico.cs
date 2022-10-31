@@ -7,10 +7,10 @@ namespace RoleplayGame.Items;
 /// </summary>
 public class BastonMagico : IAttackItem
 {
-    private GemaDePoder Gema {get; set;}
+    private IGem Gema {get; set;}
     private Magic Magic {get; set;}
 
-    public BastonMagico(Magic magic, GemaDePoder gema)
+    public BastonMagico(Magic magic, IGem gema)
     {
         this.Magic = magic;
         this.Gema = gema;
@@ -19,7 +19,7 @@ public class BastonMagico : IAttackItem
     {
         get
         {
-            return Gema.valorDeGema + Magic.AttackPower;
+            return Gema.AttackPower + Magic.AttackPower;
         }
     }
 }
